@@ -1,0 +1,106 @@
+body {
+    background-color: #4a4a4b; 
+    color: white; 
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+    margin: auto; 
+    padding: 0; 
+}
+
+nav {
+    background-color: #0f0f1a; 
+    padding: 20px 30px; 
+    position: fixed;
+    width: 100%; 
+    top: 0; 
+    z-index: 1000; 
+}
+
+nav ul {
+    list-style-type: none; 
+    padding: 0; 
+    margin: 0; 
+    text-align: center; 
+}
+
+nav ul li {
+    display: inline; 
+    margin: 0 20px; 
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none; 
+    font-size: 24px; 
+    font-weight: bold; 
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #353433; 
+    padding: 5px 10px; 
+    border-radius: 5px; 
+}
+
+section {
+    padding: 50px 20px;
+    margin-top: 80px;
+    text-align: center;
+}
+
+h2 {
+    color: #080200;     
+    font-size: 32px;
+}
+
+ul {
+    list-style-type: none; 
+    padding: 0; 
+}
+
+ul li {
+    font-size: 20px;
+    margin: 15px 0; /* Adds space between items */
+}
+
+table {
+    margin: 20px auto; /* Centers the table horizontally */
+    width: 80%; /* Sets the table width */
+}
+
+table td {
+    padding: 10px; /* Adds padding inside table cells */
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 100%; 
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #333; /* Dark gray background for inputs */
+    color: white; /* White text color */
+    border: none; /* Removes default border */
+    border-radius: 5px; /* Rounds the corners of input fields */
+}
+
+
+@media (max-width: 1000px ) {
+    nav ul {
+        text-align: left; 
+    }
+
+    nav ul li {
+        display: block; /* Stacks menu items vertically */
+        margin: 10px 0; /* Adds space between vertical items */
+    }
+
+    section {
+        padding: 30px 10px; 
+    }
+}
+
+.my-picture {
+    width: 300px; /* Adjust width as needed */
+    height: 200px; /* Adjust height as needed */
+    object-fit: cover; /* This will maintain the aspect ratio and crop the image if needed */
+}
+
+
