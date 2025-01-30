@@ -1,0 +1,133 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #4b5464;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    margin: 0;
+}
+
+/* Container for the to-do list */
+.container {
+    width: 400px;
+    height:530px ;
+    background-color: #333232;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 50px;
+}
+
+/* Heading style */
+h2 {
+    text-align: center;
+    color: #ddc3c3;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Add task section styling */
+.add-task {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input {
+    flex: 1;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+input:focus {
+    border-color: #4CAF50;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Unordered list styling */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+li:hover {
+    background-color: #f1f1f1;
+}
+
+/* Checkbox styling */
+input[type="checkbox"] {
+    margin-right: 15px;
+    transform: scale(1.2);  /* Increase checkbox size */
+}
+
+/* Text inside task list */
+span {
+    flex: 1;
+    font-size: 16px;
+    color: #333;
+    text-decoration: none;
+}
+
+span.completed {
+    text-decoration: line-through;
+    color: #999;
+}
+
+/* Delete button */
+button.delete-btn {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button.delete-btn:hover {
+    background-color: #d32f2f;
+}
+
+/* Task checkbox: Aligning the checkbox properly with text */
+.task-item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+/* Add styling for the custom image */
+.todo-icon {
+    width: 30px; /* Adjust the size as needed */
+    height: auto;
+    vertical-align: middle; /* Align it with text */
+    margin-right: 10px;
+}
